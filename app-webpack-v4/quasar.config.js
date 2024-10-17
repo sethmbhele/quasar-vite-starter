@@ -72,6 +72,21 @@ export default configure((ctx) => {
       // https://v2.quasar.dev/quasar-cli-webpack/handling-webpack
       // "chain" is a webpack-chain object https://github.com/sorrycc/webpack-chain
       // chainWebpack (/* chain, { isClient, isServer } */) {}
+
+      /* Needed for Stackblitz to work: */
+      sassLoaderOptions: {
+        api: 'legacy',
+        sassOptions: {
+          silenceDeprecations: ['legacy-js-api'],
+        },
+      },
+      /* Needed for Stackblitz to work: */
+      scssLoaderOptions: {
+        api: 'legacy',
+        sassOptions: {
+          silenceDeprecations: ['legacy-js-api'],
+        },
+      },
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js#Property%3A-devServer
