@@ -3,9 +3,9 @@
 // Configuration for your app
 // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js
 
-import { configure } from 'quasar/wrappers';
+import { defineConfig } from '#q-app/wrappers';
 
-export default configure((/* ctx */) => {
+export default defineConfig((/* ctx */) => {
   return {
     // https://v2.quasar.dev/quasar-cli-vite/prefetch-feature
     // preFetch: true,
@@ -62,12 +62,12 @@ export default configure((/* ctx */) => {
 
         viteConf.css.preprocessorOptions.sass.api = 'legacy';
         viteConf.css.preprocessorOptions.sass.silenceDeprecations.push(
-          'legacy-js-api'
+          'legacy-js-api',
         );
 
         viteConf.css.preprocessorOptions.scss.api = 'legacy';
         viteConf.css.preprocessorOptions.scss.silenceDeprecations.push(
-          'legacy-js-api'
+          'legacy-js-api',
         );
       },
 
