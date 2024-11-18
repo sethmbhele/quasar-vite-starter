@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A Quasar CLI with Webpack starter project.",
   "private": true,
-  "packageManager": "yarn@1.22.19",
+  "packageManager": "pnpm@8.15.6",
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
@@ -12,20 +12,20 @@
     "build": "quasar build"
   },
   "dependencies": {
-    "@quasar/extras": "^1.16.12",
-    "core-js": "^3.38.1",
-    "quasar": "^2.17.0",
-    "vue": "^3.5.12",
+    "@quasar/extras": "^1.16.13",
+    "core-js": "^3.39.0",
+    "quasar": "^2.17.4",
+    "vue": "^3.5.13",
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.25.8",
-    "eslint": "^8.57.0",
-    "eslint-plugin-vue": "^9.29.0",
+    "@babel/eslint-parser": "^7.25.9",
+    "eslint": "^8.57.1",
+    "eslint-plugin-vue": "^9.31.0",
     "eslint-webpack-plugin": "^3.1.1",
     "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.3.3",
-    "@quasar/app-webpack": "^4.0.0-beta.23"
+    "@quasar/app-webpack": "^4.0.0-rc.2"
   },
   "browserslist": [
     "last 10 Chrome versions",
